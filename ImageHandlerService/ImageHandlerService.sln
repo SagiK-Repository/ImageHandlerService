@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHandlerService.Core.Domain", "ImageHandlerService.Core.Domain\ImageHandlerService.Core.Domain.csproj", "{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core\Core.Domain.csproj", "{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}"
 EndProject
