@@ -1,3 +1,3 @@
 ﻿namespace ImageHandlerService.Core.Domain.ValueObject;
 
-public record DIr(string directoryPath);
+public record Dir(string directoryPath);

@@ -1,4 +1,4 @@
-﻿namespace ImageHandlerService.Core.Domain.ValueObject;
+﻿namespace Core.Domain.ValueObject;
 
 public record ID
 {
