@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHandlerService.Core.Domain", "ImageHandlerService.Core.Domain\ImageHandlerService.Core.Domain.csproj", "{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FED4D187-80D2-4C5F-8F70-5EC47B1A636A} = {03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B06DC098-F65A-4BFA-A8E8-59E784FF8834}
+	EndGlobalSection
+EndGlobal
