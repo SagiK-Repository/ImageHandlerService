@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Messege.Redis", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.DB.Postgre", "Platform.DB.Postgre\Platform.DB.Postgre.csproj", "{A7EA6DDA-9C25-4E48-B679-634B822315F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.DataBase", "Feature.DataBase\Feature.DataBase.csproj", "{8AFC6585-407E-41D1-9A3A-D90284E159DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{A7EA6DDA-9C25-4E48-B679-634B822315F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7EA6DDA-9C25-4E48-B679-634B822315F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7EA6DDA-9C25-4E48-B679-634B822315F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFC6585-407E-41D1-9A3A-D90284E159DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFC6585-407E-41D1-9A3A-D90284E159DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFC6585-407E-41D1-9A3A-D90284E159DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFC6585-407E-41D1-9A3A-D90284E159DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +119,7 @@ Global
 		{5D8B2DDD-79F7-48E5-80A3-133EBF39F3C4} = {03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}
 		{E81C6C31-F989-4608-AFF3-F5CA5E6BEA6F} = {63660C8F-F069-491D-8F7F-E4EC5FFE342B}
 		{A7EA6DDA-9C25-4E48-B679-634B822315F1} = {63660C8F-F069-491D-8F7F-E4EC5FFE342B}
+		{8AFC6585-407E-41D1-9A3A-D90284E159DC} = {AB8AA36C-15C8-484D-8552-AFA1063FB785}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B06DC098-F65A-4BFA-A8E8-59E784FF8834}

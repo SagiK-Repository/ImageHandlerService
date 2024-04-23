@@ -22,4 +22,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Domain.Loader\Core.Domain.Loader.csproj" />
+    <ProjectReference Include="..\Core.Domain.Transfer\Core.Domain.Transfer.csproj" />
+    <ProjectReference Include="..\Core.Domain.Transform\Core.Domain.Transform.csproj" />
+  </ItemGroup>
+
 </Project>
