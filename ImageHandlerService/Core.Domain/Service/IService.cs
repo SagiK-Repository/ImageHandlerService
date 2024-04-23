@@ -5,5 +5,5 @@ namespace Core.Domain.Service;
 public interface IService
 {
     ID Id { get; }
-    List<ImageGroup> ImageGroups { get; }
+    IList<ImageGroup> ImageGroups { get; }
 }
