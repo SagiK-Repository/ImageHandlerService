@@ -12,6 +12,9 @@ public class ImageHandlerDBContext : DbContext
 {
     public ImageHandlerDBContext(DbContextOptions<ImageHandlerDBContext> options) : base(options) { }
 
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseNpgsql("User ID=postgres;Password=P@ss0rd;Host=localhost;Port=5432;Database=ContosoPizza;");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         #region One to Many
