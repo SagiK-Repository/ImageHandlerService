@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루�
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application.Handler", "Core.Application\Core.Application.Handler.csproj", "{C19F2CA2-0007-4EE3-B51A-57873430319C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.UseCase.Handler", "Core.Application\Core.UseCase.Handler.csproj", "{C19F2CA2-0007-4EE3-B51A-57873430319C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application.Message", "Core.Application.Message\Core.Application.Message.csproj", "{232428CF-299D-48DE-AE27-8252E5CCAEAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.UseCase.Message", "Core.Application.Message\Core.UseCase.Message.csproj", "{232428CF-299D-48DE-AE27-8252E5CCAEAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application.Common", "Core.Application.Common\Core.Application.Common.csproj", "{2843E30A-0B32-41BC-9578-1613813761F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.UseCase.Common", "Core.Application.Common\Core.UseCase.Common.csproj", "{2843E30A-0B32-41BC-9578-1613813761F1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain.Loader", "Core.Domain.Loader\Core.Domain.Loader.csproj", "{3B2BA342-1001-4308-91D6-063504F1CD84}"
 EndProject
