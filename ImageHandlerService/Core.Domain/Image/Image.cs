@@ -1,4 +1,5 @@
-﻿using ImageHandlerService.Core.Domain.ValueObject;
+﻿using Core.Domain.ValueObject;
+using ImageHandlerService.Core.Domain.ValueObject;
 
 namespace Core.Domain;
 
