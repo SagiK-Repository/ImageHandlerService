@@ -1,5 +1,14 @@
-﻿namespace Feature.DataBase.Repository;
+﻿using Core.UseCase.DBService.Repository;
+using Feature.DataBase.Context;
 
-public class TransformRepository
+namespace Feature.DataBase.Repository;
+
+public class TransformRepository : ITransformRepository
 {
+    private readonly ImageHandlerDBContext _imageHandlerDBContext;
+
+    public TransformRepository(ImageHandlerDBContext imageHandlerDBContext)
+    {
+        _imageHandlerDBContext = imageHandlerDBContext;
+    }
 }
