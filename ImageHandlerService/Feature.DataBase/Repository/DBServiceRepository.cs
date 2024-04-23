@@ -10,5 +10,5 @@ public class DBServiceRepository : IDBServiceRepository
     public DBServiceRepository(ImageHandlerDBContext imageHandlerDBContext)
     {
         _imageHandlerDBContext = imageHandlerDBContext;
-    }   
+    }
 }

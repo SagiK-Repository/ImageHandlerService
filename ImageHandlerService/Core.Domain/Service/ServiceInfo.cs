@@ -10,7 +10,7 @@ public class ServiceInfo : Detail, IService
     public ID Id { get; set; } = new(0);
 
     public IList<ImageGroup> ImageGroups { get; set; } = [];
-  
+
     //public IList<IService> Services { get; set; } = [];
     public IList<LoaderInfo> LoaderInfos { get; set; } = [];
 

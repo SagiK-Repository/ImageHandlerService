@@ -10,7 +10,7 @@ public class ImageGroup : Detail
 {
     public ID Id { get; set; } = null!;
     public Name Name { get; set; } = new(string.Empty);
-    public IList<Image> Images { get; set;} = [];
+    public IList<Image> Images { get; set; } = [];
 
     //public IList<IService> Services { get; set; } = [];
     public IList<LoaderInfo> LoaderInfos { get; set; } = [];
