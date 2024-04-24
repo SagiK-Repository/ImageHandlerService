@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <DockerfileRunArguments>-p 5432:5432</DockerfileRunArguments>
+  </PropertyGroup>
+
 </Project>
