@@ -1,4 +1,4 @@
-﻿using Core.UseCase.DBService.Repository;
+﻿using Core.UseCase.DB.Repository;
 using Feature.DataBase.Context;
 
 namespace Feature.DataBase.Repository;

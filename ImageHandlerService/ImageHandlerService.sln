@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{FED4D187-80D2-4C5F-8F70-5EC47B1A636A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core (1,2)", "Core (1,2)", "{03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{4871B8F5-1F0E-459D-A8DA-A8404152DAEF}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,25 +19,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.UseCase.Message", "Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.UseCase.Common", "Core.Application.Common\Core.UseCase.Common.csproj", "{2843E30A-0B32-41BC-9578-1613813761F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UseCase.DBService", "Core.UseCase.DBService\Core.UseCase.DBService.csproj", "{8E996F90-36D6-400D-953E-6C169735AD03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.DBService", "Core.UseCase.DBService\Service.DBService.csproj", "{8E996F90-36D6-400D-953E-6C169735AD03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UseCase.LoadService", "Core.UseCase.LoadService\Core.UseCase.LoadService.csproj", "{3E325E89-724B-4422-9CF8-1AF544657DDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.LoadService", "Core.UseCase.LoadService\Service.LoadService.csproj", "{3E325E89-724B-4422-9CF8-1AF544657DDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UseCase.TransformService", "Core.UseCase.TransformService\Core.UseCase.TransformService.csproj", "{DEBC9423-EE08-45D0-B7EE-C1232373CBFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.TransformService", "Core.UseCase.TransformService\Service.TransformService.csproj", "{DEBC9423-EE08-45D0-B7EE-C1232373CBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UseCase.TransferService", "Core.UseCase.TransferService\Core.UseCase.TransferService.csproj", "{AF005F1A-A7CA-48E4-B4A8-DDE4C5DA87EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.TransferService", "Core.UseCase.TransferService\Service.TransferService.csproj", "{AF005F1A-A7CA-48E4-B4A8-DDE4C5DA87EC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{AB8AA36C-15C8-484D-8552-AFA1063FB785}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature (3)", "Feature (3)", "{AB8AA36C-15C8-484D-8552-AFA1063FB785}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{63660C8F-F069-491D-8F7F-E4EC5FFE342B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform (4)", "Platform (4)", "{63660C8F-F069-491D-8F7F-E4EC5FFE342B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Messege.Redis", "Platform.Redis\Platform.Messege.Redis.csproj", "{E81C6C31-F989-4608-AFF3-F5CA5E6BEA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Messege.Redis", "Platform.Redis\Platform.Messege.Redis.csproj", "{E81C6C31-F989-4608-AFF3-F5CA5E6BEA6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.DB.Postgre", "Platform.DB.Postgre\Platform.DB.Postgre.csproj", "{A7EA6DDA-9C25-4E48-B679-634B822315F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.DB.Postgre", "Platform.DB.Postgre\Platform.DB.Postgre.csproj", "{A7EA6DDA-9C25-4E48-B679-634B822315F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.DataBase", "Feature.DataBase\Feature.DataBase.csproj", "{8AFC6585-407E-41D1-9A3A-D90284E159DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.DataBase", "Feature.DataBase\Feature.DataBase.csproj", "{8AFC6585-407E-41D1-9A3A-D90284E159DC}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6A5E34D5-0986-4BC8-BD47-E327F4D0E266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Usecase.DB", "..\Core.Usecase.DB\Core.Usecase.DB.csproj", "{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{6A5E34D5-0986-4BC8-BD47-E327F4D0E266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A5E34D5-0986-4BC8-BD47-E327F4D0E266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A5E34D5-0986-4BC8-BD47-E327F4D0E266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{E81C6C31-F989-4608-AFF3-F5CA5E6BEA6F} = {63660C8F-F069-491D-8F7F-E4EC5FFE342B}
 		{A7EA6DDA-9C25-4E48-B679-634B822315F1} = {63660C8F-F069-491D-8F7F-E4EC5FFE342B}
 		{8AFC6585-407E-41D1-9A3A-D90284E159DC} = {AB8AA36C-15C8-484D-8552-AFA1063FB785}
+		{E13AD28E-BF2D-4EFB-B371-69F5E0D4912B} = {03DF0A2A-464A-4777-A8E5-5F7F5F678CB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B06DC098-F65A-4BFA-A8E8-59E784FF8834}
