@@ -17,10 +17,10 @@ public class ImageHandlerDBContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         #region ID Mapping
-        modelBuilder.Entity<ServiceInfo>()
+        modelBuilder.Entity<LoaderInfo>()
             .Property(e => e.Id)
             .HasConversion(id => id.Value, value => new ID(value));
-        modelBuilder.Entity<LoaderInfo>()
+        modelBuilder.Entity<ServiceInfo>()
             .Property(e => e.Id)
             .HasConversion(id => id.Value, value => new ID(value));
         modelBuilder.Entity<TransformInfo>()
