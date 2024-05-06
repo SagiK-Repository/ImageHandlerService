@@ -7,6 +7,7 @@ public record FileSize
 
     private readonly long _value;
 
+    public FileSize() { }
     public FileSize(long value)
     {
         if (value < MinValue || value > MaxValue)

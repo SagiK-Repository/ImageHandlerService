@@ -7,6 +7,7 @@ public record ID
 
     private readonly int _value;
 
+    public ID() { }
     public ID(int value)
     {
         if (value < _minValue || value > _maxValue)
