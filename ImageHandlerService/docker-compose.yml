@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  platform.db.postgre:
+    image: ${DOCKER_REGISTRY-}platformdbpostgre
+    build:
+      context: .
+      dockerfile: Platform.DB.Postgre/Dockerfile
+  db:
+    image: postgres:latest
+    container_name: ImageHandlerServiceDB
+    ports:
+        - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "P@ss0rd"
+    
