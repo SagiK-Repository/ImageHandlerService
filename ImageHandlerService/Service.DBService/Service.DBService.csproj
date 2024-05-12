@@ -28,12 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core.Usecase.DB\Core.Usecase.DB.csproj" />
+    <ProjectReference Include="..\Core.Usecase.DB\Core.Usecase.DB.csproj" />
     <ProjectReference Include="..\Feature.DataBase\Feature.DataBase.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Protos\" />
+    <Protobuf Include="Protos"/>
   </ItemGroup>
 
 </Project>
