@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+import "image/Images.proto";
+
+option csharp_namespace = "Service.DBService.Protos";
+
+package imageGroup;
+
+service ImageGroup{
+	rpc CreateImageGroup (ImageGroupModel) returns (Response);
+	rpc UpdateImageGroup (ImageGroupLookupModel, ImageGroupModel) returns (Response);
+	rpc DeleteImageGroup (ImageGroupLookupModel) returns (Response);
+
+	rpc AddImage (ImageGroupLookupModel, ImageLookupModel) returns (Response);
+	rpc GetImageGroupInfo (ImageGroupLookupModel) returns (ImageGroupModel);
+	rpc GetImageGroupsInfoFromLoader (LoaderInfoLookupModel) returns (stream ImageGroupModel);
+	rpc GetImageGroupsInfoFromTransform (TransformInfoLookupModel) returns (stream ImageGroupModel);
+	rpc GetImageGroupsInfoFromTransfer (TransferInfoLookupModel) returns (stream ImageGroupModel);
+}
+
+message ImageGroupLookupModel {
+	int32 id = 1;
+}
+
+message ImageGroupModel {
+	int32 id = 1;
+	string name = 2;
+	int32 loaderId = 3;
+	int32 transformId = 4;
+	int32 transferId = 5;
+	string startTime = 6;
+	int32 count = 7;
+}
+
+message LoaderInfoLookupModel {
+	int32 id = 1;
+}
+
+message TransformInfoLookupModel {
+	int32 id = 1;
+}
+
+message TransferInfoLookupModel {
+	int32 id = 1;
+}
+
+message ServiceInfoLookupModel {
+	int32 id = 1;
+	string startTime = 6;
+	int32 count = 7;
+}

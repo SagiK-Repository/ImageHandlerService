@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Service.DBService";
+
+package response;
+
+message Response {
+  bool response = 1;
+  string exception = 2;
+}

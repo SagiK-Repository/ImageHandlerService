@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+import "imageGroup/ImageGroups.proto";
+
+option csharp_namespace = "Service.DBService";
+
+package transform;
+
+service Transform{
+	rpc CreateTransform (TransformModel) returns (Response);
+	rpc UpdateTransform (TransformInfoLookupModel, TransformModel) returns (Response);
+	rpc DeleteTransform (TransformInfoLookupModel) returns (Response);
+
+	rpc AddImageGroup (TransformInfoLookupModel, ImageGroupLookupModel) returns (Response);
+	rpc GetTransformInfo (TransformInfoLookupModel) returns (TransformModel);
+	rpc GetTransformsInfo (ServiceInfoLookupModel) returns (stream TransformModel);
+}
+
+message TransformModel {
+	int32 id = 1;
+	double width = 2;
+	double height = 3;
+	string fileType = 4;
+	int32 serviceId = 5;
+	string startTime = 6;
+	int32 count = 7;
+}

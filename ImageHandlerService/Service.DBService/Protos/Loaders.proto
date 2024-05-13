@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+import "imageGroup/ImageGroups.proto";
+
+option csharp_namespace = "Service.DBService";
+
+package loader;
+
+service Loader{
+	rpc CreateLoader (LoaderModel) returns (Response);
+	rpc UpdateLoader (LoaderInfoLookupModel, LoaderModel) returns (Response);
+	rpc DeleteLoader (LoaderInfoLookupModel) returns (Response);
+
+	rpc AddImageGroup (LoaderInfoLookupModel, ImageGroupLookupModel) returns (Response);
+	rpc GetLoaderInfo (LoaderInfoLookupModel) returns (LoaderModel);
+	rpc GetLoadersInfo (ServiceInfoLookupModel) returns (stream LoaderModel);
+}
+
+message LoaderModel {
+	int32 id = 1;
+	string lookDir = 2;
+	string modelDIr = 3;
+	int32 repeatTime = 4;
+	int32 serviceId = 5;
+	string startTime = 6;
+	int32 count = 7;
+}

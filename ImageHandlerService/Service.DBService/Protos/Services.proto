@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+import "imageGroup/ImageGroups.proto";
+import "transform/Transforms.proto";
+import "transfer/Transfers.proto";
+import "loader/Loaders.proto";
+
+option csharp_namespace = "Service.DBService";
+
+package serviceInfo;
+
+service serviceInfo {
+	rpc AddImageGroup (ImageGroupLookupModel) returns (Response);
+	rpc AddLoaderInfo (LoaderInfoLookupModel) returns (Response);
+	rpc AddTransformInfo (TransformInfoLookupModel) returns (Response);
+	rpc AddTransferInfo (TransferInfoLookupModel) returns (Response);
+
+	rpc GetImageGroups (NewServiceInfoRequest) returns (stream ImageGroupModel);
+	rpc GetLoaderInfos (NewServiceInfoRequest) returns (stream LoaderModel);
+	rpc GetTransformInfos (NewServiceInfoRequest) returns (stream TransformModel);
+	rpc GetTransferInfos (NewServiceInfoRequest) returns (stream TransferModel);
+}
+
+message NewServiceInfoRequest {
+
+}

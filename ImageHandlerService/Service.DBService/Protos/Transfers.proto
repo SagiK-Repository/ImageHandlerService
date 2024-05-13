@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+import "imageGroup/ImageGroups.proto";
+
+option csharp_namespace = "Service.DBService";
+
+package transfer;
+
+service Transfer{
+	rpc CreateTransfer (TransferModel) returns (Response);
+	rpc UpdateTransfer (TransferInfoLookupModel, TransferModel) returns (Response);
+	rpc DeleteTransfer (TransferInfoLookupModel) returns (Response);
+
+	rpc AddImageGroup (TransferInfoLookupModel, ImageGroupLookupModel) returns (Response);
+	rpc GetTransferInfo (TransferInfoLookupModel) returns (TransferModel);
+	rpc GetTransfersInfo (ServiceInfoLookupModel) returns (stream TransferModel);
+}
+
+message TransferModel {
+	int32 id = 1;
+	string sendDir = 2;
+	int32 serviceId = 3;
+	string startTime = 4;
+	int32 count = 5;
+}

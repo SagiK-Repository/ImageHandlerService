@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "response/Response.proto";
+
+option csharp_namespace = "Service.DBService.Protos";
+
+package image;
+
+service Image {
+	rpc CreateImage (ImageModel) returns (Response);
+	rpc UpdateImage (ImageLookupModel, ImageModel) returns (Response);
+	rpc DeleteImage (ImageLookupModel) returns (Response);
+
+	rpc GetImageInfo (ImageLookupModel) returns (ImageModel);
+	rpc GetImagesInfo (ImageGroupLookupModel) returns (stream ImageModel);
+}
+
+message ImageLookupModel {
+	int32 id = 1;
+}
+
+message ImageModel {
+	int32 id = 1;
+	string name = 2;
+	string type = 3;
+	int64 size = 4;
+	int32 gourpId = 5;
+}
+
+message ImageGroupLookupModel {
+	int32 id = 1;
+}
