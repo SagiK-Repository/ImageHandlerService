@@ -2,9 +2,9 @@
 
 public interface IAsyncHandler
 {
-    Task<object> GetInfo(string path);
+    Task<object> GetInfoAsync(string path);
 
-    Task<bool> Create(string path);
-    Task<bool> Rename(string path);
-    Task<bool> Delete(string path);
+    Task<bool> CreateAsync(string path);
+    Task<bool> ReplaceAsync(string sourcePath, string destinationPath);
+    Task<bool> DeleteAsync(string path);
 }
